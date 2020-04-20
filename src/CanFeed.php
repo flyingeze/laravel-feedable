@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace FlyingEze\LaravelFeedable;
+namespace Flyingeze\LaravelFeedable;
 
-use FlyingEze\LaravelFeedable\Contracts\Feedable;
-use FlyingEze\LaravelFeedable\Models\Feed;
+use Flyingeze\LaravelFeedable\Contracts\Feedable;
+use Flyingeze\LaravelFeedable\Models\Feed;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
-trait CanComment
+trait CanFeed
 {
     public function feed(Feedable $feedable, string $feedText = ''): Feed
     {
@@ -15,6 +15,7 @@ trait CanComment
 
         $feed = new $feedModel([
             'body'        => $feedText,
+            'slug'        => $feedText,
             'feeded_id'   => $this->primaryId(),
             'feeded_type' => get_class(),
         ]);

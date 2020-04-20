@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace FlyingEze\LaravelFeedable;
+namespace Flyingeze\LaravelFeedable;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -21,7 +21,7 @@ class LaravelFeedableServiceProvider extends ServiceProvider
             $timestamp = date('Y_m_d_His', time());
 
             $this->publishes([
-                __DIR__ . '/../database/migrations/create_feeds_table.php.stub' =>
+                __DIR__ . '/database/migrations/create_feeds_table.php.stub' =>
                     database_path("migrations/{$timestamp}_create_feeds_table.php")
             ], 'migrations');
         }

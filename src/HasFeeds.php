@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace FlyingEze\LaravelFeedable;
+namespace Flyingeze\LaravelFeedable;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Query\Builder;

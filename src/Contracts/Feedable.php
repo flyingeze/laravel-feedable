@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace FlyingEze\LaravelFeed\Contracts;
+namespace Flyingeze\LaravelFeedable\Contracts;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
