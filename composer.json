@@ -1,0 +1,23 @@
+{
+    "name": "flyingeze/laravel-feedable",
+    "description": "Just another feed system for your awesome Laravel project.",
+    "keywords": [
+      "flyingeze",
+      "laravel-feedable, laravel-feed"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eze Paul Chidiebere(flyingeze)",
+            "email": "ezepaulchidiebere@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+      "psr-4": {
+        "Flyingeze\\LaravelFeedable\\": "src/"
+      }
+    },
+    "require": {}
+}
